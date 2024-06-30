@@ -1,6 +1,6 @@
 import React from 'react';
-import LoadImage from '@/Components/LogoImage';
-import NavbarOptions from '@/Components/NavbarOptions';
+import LoadImage from './LogoImage';
+import NavbarOptions from './NavbarOptions';
 
 const Navbar = () => {
   return (

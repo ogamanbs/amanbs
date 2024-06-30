@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectsOption from '@/Components/ProjectsOption';
-import ConnectOption from '@/Components/ConnectOption';
-import AboutOption from '@/Components/AboutOption';
+import ProjectsOption from './ProjectsOption';
+import ConnectOption from './ConnectOption';
+import AboutOption from './AboutOption';
 
 const NavbarOptions = () => {
   return (
