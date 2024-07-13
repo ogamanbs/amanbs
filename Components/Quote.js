@@ -9,7 +9,7 @@ const permanent_Marker = Permanent_Marker({
 const Quote = () => {
   return (
     <div className={permanent_Marker.className}>
-        <div className="flex flex-col h-auto mt-20 md:mt-0 md:h-[75vh] justify-center items-center absolute w-full z-[100] gap-5 md:gap-0">
+        <div className="flex flex-col h-auto mt-20 md:mt-0 md:h-[75vh] justify-center items-center absolute w-full z-30 gap-5 md:gap-0">
           <div className="flex gap-10">
             <div className="text-[5vh] md:text-[10vh]">Great</div>
             <div className="text-[5vh] md:text-[10vh] text-red-600">POWERS</div>

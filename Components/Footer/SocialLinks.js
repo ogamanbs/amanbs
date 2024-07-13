@@ -14,7 +14,7 @@ export default function SocialLinks() {
             <Link href="https://www.instagram.com/itsogaman/" passHref legacyBehavior><a target="_blank"><RiInstagramLine size={35} color="white" className="cursor-pointer hover:scale-125" /></a></Link>
             <Link href="https://github.com/ogamanbs" passHref legacyBehavior><a target="_blank"><RiGithubFill size={35} color="white" className="cursor-pointer hover:scale-125" /></a></Link>
             <Link href="https://www.linkedin.com/in/aman-sharma-233450226" passHref legacyBehavior><a target="_blank"><RiLinkedinFill size={35} color="white" className="cursor-pointer hover:scale-125" /></a></Link>
-            <Link href="https://portfolio.amanbs.com/"><RiGlobalLine size={35} color="white" className="cursor-pointer hover:scale-125" /></Link>
+            <Link href="https://www.amanbs.com/"><RiGlobalLine size={35} color="white" className="cursor-pointer hover:scale-125" /></Link>
             <Link href="mailto:amansharmase100@gmail.com"><RiMailLine size={35} color="white" className="cursor-pointer hover:scale-125" /></Link>
         </div>
     )
