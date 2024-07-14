@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProjectLinks() {
+const ProjectLinks = () => {
     return (
         <div className="w-auto flex flex-col gap-4 items-center">
             <h1 className="text-xl font-bold">Projects</h1>
@@ -11,3 +11,5 @@ export default function ProjectLinks() {
         </div>
     );
 }
+
+export default ProjectLinks;

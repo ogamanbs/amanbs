@@ -10,12 +10,12 @@ import {
 } from '@remixicon/react';
 
 
-export default function SideMenuBar() {
+const SideMenuBar = () => {
   return (
     <div className="absolute w-[80%] h-auto bg-black  top-20 -translate-y-3 left-5 rounded-[30px] z-50 p-10 flex flex-col items-center">
       <div className="flex flex-col space-y-4">
         <div className="">About</div>
-        <div className="">Blog</div>
+        <Link href="/blogs"><div className="">Blogs</div></Link>
         <div className="">Projects</div>
         <div className="">Connect</div>
       </div>
@@ -31,3 +31,5 @@ export default function SideMenuBar() {
     </div>
   )
 }
+
+export default SideMenuBar;

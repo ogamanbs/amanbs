@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Skills() {
+const Skills = () => {
     return (
         <div className="w-auto flex flex-col gap-4 items-center">
             <h1 className="text-xl font-bold">Skills</h1>
@@ -19,3 +19,5 @@ export default function Skills() {
         </div>
     );
 }
+
+export default Skills;

@@ -1,13 +1,13 @@
 'use client'
 
-import Navbar from '../Components/Navbar';
-import Quote from '../Components/Quote';
-import ReactIcon from '../Components/ReactIcon';
-import MongoIcon from '../Components/MongoIcon';
-import IntroBox from '../Components/IntroBox';
-import CoverSpace from '../Components/CoverSpace';
-import Footer from '../Components/Footer';
-import Projects from '../Components/Projects';
+import Navbar from '../Components/LandingPage/Navbar';
+import Quote from '../Components/LandingPage/Quote';
+import ReactIcon from '../Components/LandingPage/ReactIcon';
+import MongoIcon from '../Components/LandingPage/MongoIcon';
+import IntroBox from '../Components/LandingPage/IntroBox';
+import CoverSpace from '../Components/LandingPage/CoverSpace';
+import Footer from '../Components/LandingPage/Footer';
+import Projects from '../Components/LandingPage/Projects';
 
 export default function Home() {
   return (

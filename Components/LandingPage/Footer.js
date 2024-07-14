@@ -5,7 +5,7 @@ import SocialLinks from './Footer/SocialLinks';
 import Skills from './Footer/Skills';
 import { RiCopyrightLine } from '@remixicon/react';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <div className="p-5">
             <div id="foot" className="mt-32 h-full w-full flex flex-col md:flex-row justify-around items-center gap-10 md:gap-32 p-10 border border-zinc-700 rounded-[30px] mb-3">
@@ -22,3 +22,5 @@ export default function Footer() {
         </div>
     );
 }
+
+export default Footer;

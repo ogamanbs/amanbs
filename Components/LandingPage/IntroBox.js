@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function IntroBox() {
+const IntroBox = () => {
     return (
         <div className=" w-full h-48">
             <div className="z-10 w-full md:w-1/2 h-full p-5 md:p-0 md:float-right md:mr-36 text-xl md:text-2xl text-center mt-5">
@@ -28,3 +28,5 @@ export default function IntroBox() {
         </div>
     )
 }
+
+export default IntroBox;

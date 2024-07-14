@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function CoverSpace() {
+const CoverSpace = () => {
   return (
     <div className="h-[90vh] w-full"></div>
   )
 }
+
+export default CoverSpace;

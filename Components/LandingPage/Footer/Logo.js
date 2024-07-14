@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function Logo() {
+const Logo = () => {
     return (
         <div className="h-auto w-auto flex flex-col items-center">
             <div className="h-20 w-20 overflow-hidden select-none">
@@ -18,3 +18,5 @@ export default function Logo() {
         </div>
     )
 }
+
+export default Logo;

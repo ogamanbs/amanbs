@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 
-export default function ReactIcon() {
+const ReactIcon = () => {
   return (
     <div id="intro" className="md:visible h-52 w-52 md:h-[60vw] md:w-[60vw] overflow-hidden md:rotate-12 absolute translate-x-20 translate-y-[60vh] md:translate-y-[48vh] md:-translate-x-72 select-none">
       <Image
@@ -14,3 +14,5 @@ export default function ReactIcon() {
     </div>
   );
 }
+
+export default ReactIcon;

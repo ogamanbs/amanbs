@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 
-export default function MongoIcon() {
+const MongoIcon = () => {
   return (
     <div className="h-32 w-32 md:h-[20rem] md:w-[20rem] overflow-hidden absolute z-[1] right-0  md:-translate-x-32  translate-y-[150px] md:translate-y-10 select-none">
       <Image
@@ -14,3 +14,5 @@ export default function MongoIcon() {
     </div>
   );
 }
+
+export default MongoIcon;

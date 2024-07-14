@@ -8,7 +8,7 @@ import {
     RiMailLine,
 } from '@remixicon/react';
 
-export default function SocialLinks() {
+const SocialLinks = () => {
     return (
         <div className="w-auto h-auto flex flex-wrap items-center justify-center gap-3">
             <Link href="https://www.instagram.com/itsogaman/" passHref legacyBehavior><a target="_blank"><RiInstagramLine size={35} color="white" className="cursor-pointer hover:scale-125" /></a></Link>
@@ -19,3 +19,5 @@ export default function SocialLinks() {
         </div>
     )
 }
+
+export default SocialLinks;
