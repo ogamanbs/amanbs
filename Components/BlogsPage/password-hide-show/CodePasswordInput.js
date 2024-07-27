@@ -1,6 +1,5 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
-import { codeToHtml } from 'shiki/index.mjs';
 
 const code = `'use client'
 import React, {useState} from 'react';
@@ -23,22 +22,25 @@ const PasswordInput = () => {
 export default PasswordInput;`;
 
 const CodePasswordInput = () => {
-  const [c, setC] = useState('');
+  const [html, setHtml] = useState('');
 
   useEffect(() => {
-    const helper = async () => {
-      const html = await codeToHtml(code, {
+    const fetchCodeToHtml = async () => {
+      const shiki = await import('shiki');
+      const { codeToHtml } = shiki;
+      const result = await codeToHtml(code, {
         lang: 'javascript',
-        theme: 'slack-dark'
+        theme: 'slack-dark',
       });
-      setC(html);
+      setHtml(result);
     };
-    helper();
+
+    fetchCodeToHtml();
   }, []);
 
   return (
     <div className="h-auto w-full p-3 text-xs overflow-x-auto">
-      <div dangerouslySetInnerHTML={{ __html: c }}/>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 };

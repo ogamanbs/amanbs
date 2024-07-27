@@ -12,11 +12,13 @@
     "@remixicon/react": "^4.2.0",
     "framer-motion": "^11.3.7",
     "next": "14.2.4",
+    "prismjs": "^1.29.0",
     "react": "^18",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/prismjs": "^1.26.4",
     "@types/react": "^18.3.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",

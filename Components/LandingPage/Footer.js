@@ -4,6 +4,8 @@ import ProjectLinks from './Footer/ProjectLinks';
 import SocialLinks from './Footer/SocialLinks';
 import Skills from './Footer/Skills';
 import { RiCopyrightLine } from '@remixicon/react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -15,7 +17,12 @@ const Footer = () => {
                 <SocialLinks />
             </div>
             <div className="flex text-sm items-center justify-center gap-2">
-                <h1 className="">AMAN SHARMA | portfolio.amanbs.com</h1>
+                <div className="flex gap-2 items-center">
+                    <div className="h-5 w-5 ">
+                        <Image className="h-full w-full object-cover" src="logo.svg" alt="www.amanbs.com" width={1440} height={1440} />
+                    </div>
+                    <h1 className=""><Link href="">www.amanbs.com</Link></h1>
+                </div>
                 <RiCopyrightLine size={15} className=""/>
                 <h1 className="">2024</h1>
             </div>
