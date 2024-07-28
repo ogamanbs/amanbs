@@ -15,7 +15,7 @@ const SideMenuBar = () => {
     <div className="absolute w-[80%] h-auto bg-black  top-20 -translate-y-3 left-5 rounded-[30px] z-50 p-10 flex flex-col items-center">
       <div className="flex flex-col space-y-4">
         <div className="">About</div>
-        <Link href="/blogs"><div className="">Blogs</div></Link>
+        <Link href="https://blogs.amanbs.com/"><div className="">Blogs</div></Link>
         <div className="">Projects</div>
         <div className="">Connect</div>
       </div>
