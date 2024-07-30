@@ -18,7 +18,7 @@ const Navbar = () => {
   }
   return (
     <div className="relative flex items-center justify-center md:justify-between px-20 py-5 z-[100]">
-      <div className="absolute text-white -translate-x-[160px]">
+      <div className="absolute text-white left-2 block md:hidden">
         {showMenu ? (<button onClick={handleDontShowClick} className=""><RiCloseLine size={20}/></button>
         ) : (
         <button onClick={handleShowClick} className=""><RiMenu2Line size={20}/></button>
