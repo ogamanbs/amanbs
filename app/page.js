@@ -13,13 +13,12 @@ export default function Home() {
   return (
     <div className="relative w-full h-full bg-black text-white overflow-x-hidden transition ease-in-out delay-150">
       <Navbar />
-      <div className="relative">
+      <div className="">
         <Quote />
-        <ReactIcon />
-        <MongoIcon />
-        <div className="absolute w-96 h-96 rotate-45 bg-red-500 translate-x-32 blur-[300px]"></div>
+        {/* <ReactIcon />
+        <MongoIcon /> */}
+        {/* <div className="absolute w-96 h-96 rotate-45 bg-red-500 translate-x-32 blur-[300px]"></div> */}
       </div>
-      <CoverSpace />
       <IntroBox />
       <div className="absolute w-96 h-96 rotate-45 bg-red-500 right-0 blur-[300px]"></div>
       <Projects />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div className="invisible md:mt-48 h-32 w-full bg-red-500">
+        <div className="h-full w-full bg-red-500">
         </div>
     )
 }
