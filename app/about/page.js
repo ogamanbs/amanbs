@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div className="flex justify-center text-zinc-400">
                 <div className="px-10 w-full md:w-1/2">
                     <p>Hi, I am <span className="text-white">Aman Bindiya Sharma</span></p><p className="mb-3">I am final year student, pusuing <span className="text-white">BTech in Computer Scinece and Engineering with specialization in Artificial Intelligence</span>.</p><p>
-                    Although, I am having my minor as <span className="text-zinc-100">Artificial Intelligence</span> but I am more inclined towards <span className="text-white">web development</span>. I use <span className="text-white">MERN (MongoDB, Express,js, React.js and Node.js)</span> as my tech stack for <span className="">ull stack web development</span>f.
+                    Although, I am having my minor as <span className="text-zinc-100">Artificial Intelligence</span> but I am more inclined towards <span className="text-white">web development</span>. I use <span className="text-white">MERN (MongoDB, Express,js, React.js and Node.js)</span> as my tech stack for <span className="">full stack web development</span>.
                     I am learning <span className="text-zinc-100">System Design</span>, and it astonishes me that how the BIG companies operate on such a great scale, their software cater to such a great variety and great number of users.
                     I want to help organizations to build softwares that can cater a large userbase and learn the same to hone my skills and to be able to impact the whole world.
                     </p>
