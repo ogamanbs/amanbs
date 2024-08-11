@@ -21,13 +21,13 @@ const IntroBox = () => {
                     undergrad
                     <br/>
                     Doing a Specialization in
-                    &nbsp;<spam className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
+                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
                         Artificial Intelligence
-                    </spam>&nbsp;
+                    </span>&nbsp;
                     <br />I am currently in my
-                    &nbsp;<spam className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
+                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
                         final
-                    </spam>&nbsp;
+                    </span>&nbsp;
                     year
                 </div>
             </div>
