@@ -4,7 +4,7 @@ import ReactIcon from './ReactIcon';
 const IntroBox = () => {
     return (
         <div className="h-auto md:h-[110vh] w-full md:w-[120vw] md:-translate-x-[30vw] flex flex-col md:flex-row gap-20 md:gap-32 justify-center items-center md:items-start py-10 md:py-0 md:-mt-5 mb-10">
-            <div className="w-76 h-96 md:w-[90vw] md:h-auto -translate-y-32 overflow-hidden">
+            <div className="w-full h-auto md:w-[90vw] md:h-auto md:-translate-y-32 overflow-hidden p-2">
                 <ReactIcon />
             </div>
             <div className="h-full md:flex md:items-center md:w-[40vw]">
