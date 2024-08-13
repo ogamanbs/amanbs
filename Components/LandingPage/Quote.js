@@ -11,7 +11,7 @@ const Quote = () => {
   return (
     <div className={bebas_Neue.className}>
         <div className="relative flex flex-col h-auto w-full mt-10 md:mt-10 md:h-[75vh] justify-center md:gap-0 font-medium leading-[10vh] md:leading-[20vh] px-2 md:px-5">
-          <div className="absolute flex items-center justify-center -right-10 md:right-48 top-0 w-72 md:w-96 h-72 md:h-96">
+          <div className="absolute flex items-center justify-center -right-20 md:right-[15%] top-0 w-72 md:w-[45vh] h-72 md:h-[45vh]">
             <MongoIcon />
           </div>
           <div className="absolute w-96 h-96 bg-red-500 -top-48 md:top-0 -left-64 md:left-0 blur-[200px] md:blur-[300px] "></div>
