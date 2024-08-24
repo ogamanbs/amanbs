@@ -7,25 +7,27 @@ const IntroBox = () => {
             <div className="w-full h-auto md:w-[90vw] md:h-auto md:-translate-y-32 overflow-hidden p-2">
                 <ReactIcon />
             </div>
-            <div className="h-full md:flex md:items-center md:w-[40vw]">
-                <div className="h-auto w-full text-xl md:text-2xl text-center">
+            <div className="h-full md:flex md:items-center md:w-[45vw] px-2 ">
+                <div className="h-auto w-full text-xl md:text-2xl text-center py-10 px-10 rounded-[25px] bg-black/10 backdrop-blur-lg border border-zinc-700 text-zinc-300 z-10">
                     Hi! this is
-                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
+                    &nbsp;<span className="text-red-600">
                         Aman Sharma
                     </span>&nbsp;
                     this side<br/>
                     I am a
-                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
+                    &nbsp;<span className="text-red-600">
                         Computer Science
                     </span>&nbsp;
                     undergrad
                     <br/>
                     Doing a Specialization in
-                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
-                        Artificial Intelligence
-                    </span>&nbsp;
-                    <br />I am currently in my
-                    &nbsp;<span className="hover:bg-red-500 hover:text-xl hover:rounded-full text-red-500 hover:text-white hover:py-2 hover:px-5">
+                    <div className="">
+                        <div className="text-red-600">
+                            Artificial Intelligence
+                        </div>
+                    </div>
+                    I am currently in my
+                    &nbsp;<span className="text-red-600">
                         final
                     </span>&nbsp;
                     year
