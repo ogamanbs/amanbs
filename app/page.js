@@ -8,8 +8,8 @@ import Projects from '../Components/LandingPage/Projects';
 
 export default function Home() {
   return (
-    <div ref={pageRef} className="relative w-full h-full bg-black text-white overflow-x-hidden transition ease-in-out delay-150">
-      <Navbar pageRef={pageRef} />
+    <div className="relative w-full h-full bg-black text-white overflow-x-hidden transition ease-in-out delay-150">
+      <Navbar />
       <div className="">
         <Quote />
       </div>
