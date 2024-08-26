@@ -7,6 +7,7 @@ import {
   RiCloseLine
 } from '@remixicon/react';
 import SideMenuBar from './SideMenuBar';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     setShowMenu(false);
   }
   return (
-    <div className="relative flex items-center justify-center md:justify-between px-20 py-5 z-[100]">
+    <div className="relative flex items-center justify-center md:justify-between pl-5 pr-20 py-5 z-[100]">
       <div className="absolute text-white left-2 block md:hidden">
         {showMenu ? (<button onClick={handleDontShowClick} className=""><RiCloseLine size={20}/></button>
         ) : (
@@ -25,7 +26,7 @@ const Navbar = () => {
         )}
       </div>
       {showMenu && <SideMenuBar />}
-      <LoadImage />
+      <Link href="/"><LoadImage /></Link>
       <NavbarOptions />
     </div>
   )

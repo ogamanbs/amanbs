@@ -15,7 +15,7 @@ const SideMenuBar = () => {
         <Link href="/about"><div className="">About</div></Link>
         <Link href="https://blogs.amanbs.com/"><div className="">Blogs</div></Link>
         <div className="">Projects</div>
-        <div className="">Connect</div>
+        <Link href="/connect"><div className="">Connect</div></Link>
       </div>
       <div className="mt-20">
       <div className="w-auto h-auto flex flex-wrap items-center justify-center gap-3">

@@ -1,11 +1,12 @@
 import React from 'react'
 
-import {Bebas_Neue  } from 'next/font/google';
+import { Bebas_Neue } from 'next/font/google';
 import MongoIcon from './MongoIcon';
 
 const bebas_Neue = Bebas_Neue({
     weight: '400',
-    subsets:['latin']});
+    subsets:['latin']
+});
 
 const Quote = () => {
   return (
