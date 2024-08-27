@@ -6,7 +6,8 @@ import Navbar from '@/Components/LandingPage/Navbar';
 export default function AboutPage() {
     useEffect(()=>{
         document.title = "About"
-    }, [])
+    }, []);
+
     return (
         <div className="w-full min-h-screen bg-black text-white">
             <Navbar />

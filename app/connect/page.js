@@ -9,13 +9,12 @@ export default function Connect() {
         document.title="Connect";
     },[])
     return (
-        <div className="w-full min-h-screen bg-black text-zinc-200">
+        <div className="w-full min-h-screen bg-black text-zinc-200 overflow-hidden">
             <Navbar />
-            <div className="relative min-h-[80vh] w-full">
+            <div className="relative min-h-[70vh] w-full">
                 <Heading />
                 <ConnectForm />
             </div>
-            <div className="h-32"></div>
         </div>
     );
 }
