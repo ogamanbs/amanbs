@@ -15,7 +15,7 @@ export default function Heading() {
         animate={{x:"0vw"}}
         transition={{duration: 0.5}}
         >
-            <h1 className={`absolute ${krona_one.className} text-[17vw] text-red-600 font-bold text-center md:-translate-y-10 w-full`}>Connect</h1>
+            <h1 className={`hidden md:block absolute ${krona_one.className} text-[17vw] text-red-600 font-bold text-center md:-translate-y-10 w-full`}>Connect</h1>
         </motion.div>
     );
 }
