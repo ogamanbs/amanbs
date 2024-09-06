@@ -13,12 +13,15 @@ export default function Messenger() {
     useEffect(()=>{
         if (session) {
             setUser(session.user);
+        } else {
+            router.back();
         }
-    },[session]);
+    },[session, router]);
 
     return (
         <>
-        { session ? (<div className="flex flex-col items-center">
+        { session && (
+            <div className="flex flex-col items-center">
             <div className="w-20 h-20 rounded-full overflow-hidden mt-5">
                 <Image src={user.image} alt={user.name} width={1440} height={1440} className="h-full w-full object-cover" />
             </div>
@@ -29,7 +32,8 @@ export default function Messenger() {
             <div className="">
                 <button onClick={()=> signOut({ callbackUrl: '/connect'})} className="mt-5 px-5 py-2 bg-red-500 text-white rounded-lg">sign out</button>
             </div>
-        </div>) : router.back()
+            </div>
+            )
         }
         </>
     )
