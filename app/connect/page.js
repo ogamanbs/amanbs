@@ -4,11 +4,17 @@ import Heading from '@/Components/ConnectPage/Heading';
 import Footer from '@/Components/LandingPage/Footer';
 import Navbar from '@/Components/LandingPage/Navbar';
 import React,{useEffect} from 'react';
+import {useSession} from 'next-auth/react';
+import {redirect} from 'next/navigation';
 
 export default function Connect() {
+    const {data: session} = useSession();
     useEffect(()=>{
         document.title="Connect";
-    },[])
+        if(session) {
+            redirect('/connect/messenger');
+        }
+    },[session]);
     return (
         <div className="w-full min-h-screen bg-black text-zinc-200 overflow-hidden">
             <Navbar />

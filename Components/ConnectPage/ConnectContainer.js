@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ConnectForm from './ConnectForm';
-import Image from 'next/image';
+import GoogleSignInButton from './GoogleSignInButton';
 
 export default function ConnectContainer() {
     return (
@@ -17,12 +17,7 @@ export default function ConnectContainer() {
                     <ConnectForm />
                     <div className="w-full h-[0.5px] bg-zinc-400"></div>
                     <div className="bg-zinc-700 px-3 py-2 rounded-full font-bold">Or</div>
-                    <div className="w-full flex flex-col gap-3 items-center">
-                        <div className="w-10 h-10 overflow-hidden">
-                            <Image className="h-full w-full cursor-pointer" src={'/google-logo.png'} alt="googlelogo" width={1440} height={1440} />
-                        </div>
-                        <h1 className="text-sm">Login to direct message me here itself</h1>
-                    </div>
+                    <GoogleSignInButton />
                 </motion.div>
             </div>
         </div>

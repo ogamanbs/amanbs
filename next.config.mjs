@@ -7,7 +7,7 @@ const nextConfig = {
     // Return the modified config
     return config;
     },images: {
-        domains: ['encrypted-tbn0.gstatic.com', 'another-domain.com', 'plus.unsplash.com', 'images.unsplash.com', 'pointgorsel.com', 'www.ibm.com'],
+        domains: ['encrypted-tbn0.gstatic.com', 'another-domain.com', 'plus.unsplash.com', 'images.unsplash.com', 'pointgorsel.com', 'www.ibm.com', 'lh3.googleusercontent.com'],
     },
 };
 
