@@ -8,13 +8,14 @@ import {useSession} from 'next-auth/react';
 import {redirect} from 'next/navigation';
 
 export default function Connect() {
-    const {data: session} = useSession();
+    const {data: session, status} = useSession();
     useEffect(()=>{
         document.title="Connect";
-        if(session) {
+        if(status === 'authenticated' && session) {
+            localStorage.setItem('user', JSON.stringify(session.user));
             redirect('/connect/messenger');
         }
-    },[session]);
+    },[status, session]);
     return (
         <div className="w-full min-h-screen bg-black text-zinc-200 overflow-hidden">
             <Navbar />
