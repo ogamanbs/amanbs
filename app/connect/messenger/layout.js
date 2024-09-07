@@ -11,15 +11,19 @@ export const meta = {
 
 export default function MessengerLayout({children}) {
     const {status} = useSession();
-    const [user] = useState(() => {
-        const savedUser = localStorage.getItem('user');
-        return savedUser !== null ? JSON.parse(savedUser) : null;
-    });
+    const [user, setUser] = useState(null);
     const router = useRouter();
 
-    if(user === null) {
-        router.replace('/connect');
-    }
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const savedUser = localStorage.getItem('user');
+            if (savedUser) {
+                setUser(JSON.parse(savedUser));
+            } else {
+                router.replace('/connect');
+            }
+        }
+    }, [router]);
 
     useEffect(()=>{
         if (status !== 'loading' && status !== 'authenticated') {

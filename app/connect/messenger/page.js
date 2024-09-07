@@ -8,16 +8,20 @@ import { RiAttachment2, RiSendPlane2Fill } from '@remixicon/react';
 
 export default function Messenger() {
     const {status} = useSession();
-    const [user] = useState(() => {
-        const savedUser = localStorage.getItem('user');
-        return savedUser !== null ? JSON.parse(savedUser) : null;
-    });
+    const [user, setUser] = useState(null);
     const [show, setShow] = useState(false);
     const router = useRouter();
 
-    if(user === null) {
-        router.replace('/connect');
-    }
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const savedUser = localStorage.getItem('user');
+            if (savedUser) {
+                setUser(JSON.parse(savedUser));
+            } else {
+                router.replace('/connect');
+            }
+        }
+    }, [router]);
 
     useEffect(()=>{
         if (status === 'unauthenticated') {
