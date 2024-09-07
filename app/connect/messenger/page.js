@@ -60,7 +60,7 @@ export default function Messenger() {
                                 className="w-full h-full object-cover"
                             />
                         </button>
-                        {show && <div className="absolute right-0 top-12 bg-zinc-700/30 rounded-[20px] w-[15vw] border border-zinc-700 text-sm flex items-center px-10 py-3">
+                        {show && <div className="absolute right-0 top-12 bg-zinc-700/30 rounded-[20px] w-auto border border-zinc-700 text-sm flex items-center px-10 py-3">
                             <div className="w-full">
                                 <button onClick={handleLogOut} className="w-full">Logout</button>
                             </div>
