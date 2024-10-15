@@ -18,7 +18,7 @@ const Navbar = () => {
     setShowMenu(false);
   }
   return (
-    <div className="relative flex items-center justify-center md:justify-between pl-5 pr-20 py-5 z-[100]">
+    <div className="relative flex items-center justify-center md:justify-between md:pl-5 md:pr-20 py-5 z-[100]">
       <div className="absolute text-white left-2 block md:hidden">
         {showMenu ? (<button onClick={handleDontShowClick} className=""><RiCloseLine size={20}/></button>
         ) : (
