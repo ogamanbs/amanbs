@@ -1,3 +1,4 @@
+'use client'
 import React,{useState} from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -7,20 +8,29 @@ export default function ConnectForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await emailjs.sendForm(
-                process.env.NEXT_PUBLIC_SERVICE_ID,   // serviceId
-                process.env.NEXT_PUBLIC_TEMPLATE_ID,  // templateId
-                e.target,  // template Params
-                process.env.NEXT_PUBLIC_PUBLIC_KEY    // options -> public key
-            );
-            if (response) {
-                setStateMessage("Message sent!");
-                setIsSubmitting(false);
-                setTimeout(() => {
-                    setStateMessage(null);
-                }, 2000); // hide message after 5 seconds
+            if(e.target.elements.name.value !== "" && e.target.elements.email.value !== "" && e.target.elements.message.value !== "") {
+                setIsSubmitting(true);
+                const response = await emailjs.sendForm(
+                    process.env.NEXT_PUBLIC_SERVICE_ID,   // serviceId
+                    process.env.NEXT_PUBLIC_TEMPLATE_ID,  // templateId
+                    e.target,  // template Params
+                    process.env.NEXT_PUBLIC_PUBLIC_KEY    // options -> public key
+                );
+                if (response) {
+                    setStateMessage("Message sent!");
+                    setIsSubmitting(false);
+                    setTimeout(() => {
+                        setStateMessage(null);
+                    }, 2000); // hide message after 5 seconds
+                } else {
+                    setStateMessage('Something went wrong, please try again later');
+                    setIsSubmitting(false);
+                    setTimeout(()=>{
+                        setStateMessage(null);
+                    }, 2000); // hide message after 5 seconds
+                }
             } else {
-                setStateMessage('Something went wrong, please try again later');
+                setStateMessage('Empty Fields not allowed');
                 setIsSubmitting(false);
                 setTimeout(()=>{
                     setStateMessage(null);
@@ -71,12 +81,15 @@ export default function ConnectForm() {
             <div className="flex justify-center">
             {
                 stateMessage ? (
-                    <p>{stateMessage}</p>
-                ) : (
-                <input
+                    <p className="text-sm px-5 py-2">{stateMessage}</p>
+                ) :
+                !isSubmitting ?
+                    (<input
                     type="submit"
-                    className="bg-red-500 px-5 py-2 font-bold text-sm rounded-lg cursor-pointer"
-                />
+                    disabled={isSubmitting}
+                    className="bg-red-800 px-5 py-2 font-bold text-sm rounded-lg cursor-pointer"
+                />) : (
+                    <div className="bg-red-500/30 px-5 py-2 text-sm rounded-lg cursor-default"> Sending ....</div>
                 )
             }
             </div>

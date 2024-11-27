@@ -35,10 +35,10 @@ export default function MessengerLayout({children}) {
     return (
         <>
         {user && (<div className="w-full h-[94vh] md:h-screen flex">
-            <div className="hidden md:block w-[18%] h-full" style={{'backgroundColor': '#171717'}}>
+            <div className="hidden md:block w-[18%] h-full bg-[#171717]">
                 <MenuMessenger user={user} />
             </div>
-            <div className="w-full md:w-[82%] h-full" style={{'backgroundColor' : '#212121'}}>
+            <div className="w-full md:w-[82%] h-full bg-[#212121]">
                 {children}
             </div>
             </div>
