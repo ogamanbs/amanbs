@@ -8,6 +8,7 @@ const IntroBox = () => {
                 <ReactIcon />
             </div>
             <div className="h-full md:flex md:items-center md:w-[45vw] px-2 ">
+            <div className="absolute w-[60vh] h-[60vh] rotate-45 bg-red-500 right-0 blur-[600px] -z-2 -translate-x-96 translate-y-72"></div>
                 <div className="h-auto w-full text-xl md:text-2xl text-center py-10 px-10 rounded-[25px] bg-black/10 backdrop-blur-lg border border-zinc-700 text-zinc-300 z-10">
                     Hi! this is
                     &nbsp;<span className="text-red-600">

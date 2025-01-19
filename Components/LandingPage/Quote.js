@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import { Bebas_Neue } from 'next/font/google';
 import MongoIcon from './MongoIcon';

@@ -25,7 +25,7 @@ const Navbar = () => {
         <button onClick={handleShowClick} className=""><RiMenu2Line size={20}/></button>
         )}
       </div>
-      {showMenu && <SideMenuBar />}
+      {showMenu && <SideMenuBar setShowMenu={setShowMenu}/>}
       <Link href="/"><LoadImage /></Link>
       <NavbarOptions />
     </div>

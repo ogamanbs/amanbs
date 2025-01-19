@@ -10,14 +10,19 @@ import {
 } from '@remixicon/react';
 import Image from 'next/image';
 
-const SideMenuBar = () => {
+const SideMenuBar = ({setShowMenu}) => {
+
+  const handleClick = () => {
+    setShowMenu(false);
+  }
+
   return (
     <div className="absolute w-[100%] h-[92vh] bg-black/60 backdrop-blur-lg left-0 top-[8vh] rounded-[30px] z-20 py-20 px-10 flex flex-col items-center">
       <div className="flex flex-col space-y-4 text-xl">
         <Link href="/"><div className="">Home</div></Link>
         <Link href="/about"><div className="">About</div></Link>
         <Link href="https://blogs.amanbs.com/"><div className="">Blogs</div></Link>
-        <div className="">Projects</div>
+        <Link href="#projects"><div onClick={handleClick} className="">Projects</div></Link>
         <Link href="/connect"><div className="">Connect</div></Link>
       </div>
       <div className="mt-20">
