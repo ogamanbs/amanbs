@@ -10,7 +10,7 @@ const bebas_Neue = Bebas_Neue({
 
 const ProjectsDisplay = () => {
     return (
-        <div id="projects" className="h-full w-full md:p-5 z-10 mt-20 md:-translate-y-48 select-none">
+        <div id="projects" className="relative z-20 h-full w-full md:p-5 mt-20 md:-translate-y-48 select-none">
             <div className="h-full w-full text-sm">
                 <div className="mb-32">
                     <h1 className={`text-center text-8xl font-bold ${bebas_Neue.className}`}>

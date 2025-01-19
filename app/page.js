@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <IntroBox />
       <ProjectsDisplay />
-      <div className="absolute w-[60vh] h-[50vh] rotate-45 bg-red-500 right-0 blur-[250px] -z-2 -translate-y-20"></div>
+      <div className="absolute w-[60vh] h-[50vh] rotate-45 bg-red-500 right-0 blur-[250px] -translate-y-20"></div>
       <Footer />
     </div>
   );
