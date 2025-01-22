@@ -37,7 +37,7 @@ const SkillsAboutMe = () => {
                 </div>
                 <div className="h-auto w-48 flex flex-col">
                     <div className="h-48 w-full  rounded-[20px] overflow-hidden flex items-center">
-                        <Image src="https://pointgorsel.com/en/wp-content/uploads/sites/2/2023/08/oop-1170x700.png" alt="OOPS" width={1440} height={1440} />
+                        <Image src="https://miro.medium.com/v2/resize:fit:1394/format:webp/1*q0Tw3AvDkXhS_Ot3Y5_fxw.png" alt="OOPS" width={1440} height={1440} />
                     </div>
                     <h2 className="text-center p-1 text-zinc-200 text-sm">Object Oriented Programming</h2>
                 </div>
