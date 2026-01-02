@@ -22,7 +22,7 @@ export default function Bitem() {
                     The seller can also create a product on this project and can list their products on this website. The sellers are provided with a seperate website called bitem business where they can create products.
                 </div>
                 <div className="h-auto flex md:justify-end gap-4 mt-5">
-                    <Link href="https://bitem.in"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">visit</button></Link>
+                    {/* <Link href="https://bitem.in"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">visit</button></Link> */}
                     <Link href="https://github.com/ogamanbs/bitem-server"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">github</button></Link>
                     {/* <Link href=""><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800">Explanation</button></Link> */}
                 </div>

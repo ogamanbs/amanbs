@@ -10,7 +10,7 @@ const NavbarOptions = () => {
     <div className="hidden text-white md:flex items-center gap-2 text-sm capitalize">
       <HomeOption />
       <AboutOption />
-      <BlogsOption />
+      {/* <BlogsOption /> */}
       <ProjectsOption />
       <ConnectOption />
     </div>

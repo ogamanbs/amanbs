@@ -21,7 +21,7 @@ const SideMenuBar = ({setShowMenu}) => {
       <div className="flex flex-col space-y-4 text-xl">
         <Link href="/"><div className="">Home</div></Link>
         <Link href="/about"><div className="">About</div></Link>
-        <Link href="https://blogs.amanbs.com/"><div className="">Blogs</div></Link>
+        {/* <Link href="https://blogs.amanbs.com/"><div className="">Blogs</div></Link> */}
         <Link href="/#projects"><div onClick={handleClick} className="">Projects</div></Link>
         <Link href="/connect"><div className="">Connect</div></Link>
       </div>

@@ -5,7 +5,7 @@ const TechInfo = () => {
         <div className="h-full w-full mt-20 mb-10 md:mt-5 md:mb-0">
             <div className="flex justify-between">
                 <h1 className="text-2xl text-red-300">BTech CSE with AI</h1>
-                <h1 className="text-2xl text-red-300">76.7 %</h1>
+                <h1 className="text-2xl text-red-300">77.6 %</h1>
             </div>
             <h1 className="text-xl mt-2 font-light">GL Bajaj Institute of Technology and Management</h1>
             <h1 className="text-md font-light">Greater Noida, Knowledge Park-III, India</h1>

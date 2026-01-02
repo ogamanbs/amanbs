@@ -30,7 +30,7 @@ export default function Strokeml() {
                 <div className="h-auto flex gap-4 mt-5">
                     {/* <Link href=""><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800">Explanation</button> */}
                     <Link href="https://github.com/ogamanbs/stroke-prediction-server"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">github</button></Link>
-                    <Link href="https://strokeml.vercel.app"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">visit</button></Link>
+                    {/* <Link href="https://strokeml.vercel.app"><button className="px-5 py-2 bg-zinc-900 rounded-full hover:bg-zinc-800 capitalize">visit</button></Link> */}
                 </div>
             </div>
         </div>

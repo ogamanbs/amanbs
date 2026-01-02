@@ -42,8 +42,8 @@ const SkillsAboutMe = () => {
                     <h2 className="text-center p-1 text-zinc-200 text-sm">Object Oriented Programming</h2>
                 </div>
                 <div className="h-auto w-48 flex flex-col">
-                    <div className="h-48 w-full  rounded-[20px] overflow-hidden flex items-center">
-                        <Image src={"https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Azure-SQL-Server-Monitoring.component.complex-narrative-xl-retina.ts=1689345623470.png/content/adobe-cms/us/en/products/instana/supported-technologies/microsoft-sql-server-monitoring/jcr:content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage"} alt="SQL" width={1440} height={1440} />
+                    <div className="h-48 w-full rounded-[20px] overflow-hidden flex items-center">
+                        <h1 className="w-full text-wrap font-bold bg-blue-950 text-center text-xl px-3 py-3 select-none">SQL</h1>
                     </div>
                     <h2 className="text-center p-1 text-zinc-200 text-sm">SQL</h2>
                 </div>
@@ -55,7 +55,7 @@ const SkillsAboutMe = () => {
                 </div>
                 <div className="h-auto w-48 flex flex-col">
                     <div className="h-48 w-full rounded-[20px] overflow-hidden flex items-center">
-                        <h1 className="w-full text-wrap font-bold bg-blue-950 text-center text-xl px-3 py-3 select-none">Low level System Design</h1>
+                        <h1 className="w-full text-wrap font-bold bg-blue-950 text-center text-xl px-3 py-3 select-none">Low Level System Design</h1>
                     </div>
                     <h2 className="text-center p-1 text-zinc-200 text-sm">Low Level Design</h2>
                 </div>
